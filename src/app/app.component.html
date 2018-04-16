@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+</div>
+<div class="container">
+  <form [formGroup]="studform" (ngSubmit)="onIns()">
+    <div class="form-group">
+      <input type="text" class="form-control" formControlName="nm" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" formControlName="ad" placeholder="Enter Address">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="form-control" >Insert</button>
+    </div>
+  </form>
+</div>
